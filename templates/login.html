@@ -17,9 +17,13 @@
         'width': 240,
         'height': 50,
         'longtitle': true,
-        'theme': 'dark',
         'onsuccess': onSuccess,
-        'onfailure': onFailure
+        'onfailure': onFailure,
+        'approvalprompt': 'force',
+        'callback': 'signInCallback',
+        'redirecturi': 'postmessage',
+        'accesstype': 'offline',
+        'cookiepolicy': 'single_host_origin'
       });
     }
   </script>
